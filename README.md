@@ -53,15 +53,15 @@ All text lives in `src/data/`:
 
 ### GitHub Pages (current setup)
 
-Repository: `Sanda1113/Sandakan-Liyanage` · Live site: <https://sanda1113.github.io/Sandakan-Liyanage/>
+Repository: `Sanda1113/Sandakan-Liyanage` · Live site: <https://sandakan.is-a.dev/>
 
-The workflow at `.github/workflows/deploy.yml` builds and publishes on every push to `main`. Pages is configured with **Source: GitHub Actions**. `vite.config.js` sets `base: '/Sandakan-Liyanage/'` to match the repository name, and all asset paths (CV, images, reports) go through a `withBase()` helper, so they work under that sub-path.
+The workflow at `.github/workflows/deploy.yml` builds and publishes on every push to `main`. Pages is configured with **Source: GitHub Actions** and the custom domain `sandakan.is-a.dev` (registered through <https://github.com/is-a-dev/register>, DNS CNAME to `sanda1113.github.io`). `public/CNAME` keeps that domain attached across deploys, and `vite.config.js` uses `base: '/'`. The old URL <https://sanda1113.github.io/Sandakan-Liyanage/> redirects here.
 
-To build for the root of a domain instead (custom domain, Netlify, Vercel), set `VITE_BASE=/` for the build or change `base` in `vite.config.js`.
+All asset paths (CV, images, reports) go through a `withBase()` helper, so if the site ever moves back under a sub-path, only `base` needs to change (set `VITE_BASE` for one build, or edit `vite.config.js`).
 
-### Custom domain
+### Changing the domain
 
-Buy or obtain a domain, add a `CNAME` file containing it to `public/`, point the domain's DNS at GitHub Pages (CNAME record to `sanda1113.github.io`), then enable **Enforce HTTPS** in the repository's Pages settings and switch `base` to `/`.
+Add the new domain to `public/CNAME`, point its DNS at GitHub Pages (CNAME record to `sanda1113.github.io`), update the canonical and Open Graph URLs in `index.html`, then enable **Enforce HTTPS** in the repository's Pages settings.
 
 ### Netlify
 
