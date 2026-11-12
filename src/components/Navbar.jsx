@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { navLinks, site } from '../data/site'
 import { useActiveSection } from '../hooks/useReveal'
+import { withBase } from '../utils'
 import { DownloadCvButton } from './Button'
 import { CloseIcon, MenuIcon } from './Icons'
 
@@ -42,9 +43,7 @@ export function Navbar() {
     >
       <nav aria-label="Primary" className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-2 font-bold tracking-tight" aria-label={`${site.name} – home`}>
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent-fill font-mono text-sm text-on-accent">
-            {site.initials}
-          </span>
+          <img src={withBase('/favicon.svg')} alt="" width={36} height={36} className="h-9 w-9 rounded-lg" />
           <span className="hidden sm:inline">{site.name}</span>
         </a>
 
