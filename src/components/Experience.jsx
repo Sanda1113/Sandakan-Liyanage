@@ -26,6 +26,12 @@ export function Experience() {
                     <span className="font-medium text-text">{job.company}</span>
                     <span aria-hidden="true">·</span>
                     <span>{job.location}</span>
+                    {job.employment && (
+                      <>
+                        <span aria-hidden="true">·</span>
+                        <span>{job.employment}</span>
+                      </>
+                    )}
                   </p>
                 </div>
                 <div className="flex flex-col items-start gap-1 sm:items-end">

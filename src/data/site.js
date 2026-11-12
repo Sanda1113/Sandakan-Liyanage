@@ -5,7 +5,7 @@ export const site = {
   name: 'Sandakan Liyanage',
   initials: 'SL',
   headline:
-    'Database Engineering Intern @ Onsys Technologies | Cloud & DevOps | Final-Year Computer Science (Cloud Technologies)',
+    'Associate Database Engineer @ Onsys Technologies | Cloud & DevOps | Final-Year Computer Science (Cloud Technologies)',
   tagline:
     'I design, build and keep resilient systems running — from highly available AWS architectures to production SQL Server and Oracle databases.',
   // Small pill above the name.
@@ -29,7 +29,7 @@ export const site = {
 export const heroConsole = {
   title: 'sandakan@onsys — status',
   rows: [
-    { key: 'role', value: 'Database Engineering Intern · Onsys Technologies (Oct 2026 – Present)' },
+    { key: 'role', value: 'Associate Database Engineer · Onsys Technologies (Nov 2026 – Present)' },
     {
       key: 'focus',
       value: 'Cloud Engineering · Database Engineering · Site Reliability Engineering · Database Reliability Engineering',
@@ -61,7 +61,7 @@ export const navLinks = [
 export const about = {
   paragraphs: [
     'Final-year Computer Science student specialising in Cloud Technologies at Staffordshire University (via APIIT Sri Lanka), predicted First Class Honours.',
-    'Currently a Database Engineering Intern at Onsys Technologies (Melbourne, Australia – remote), working on SQL Server and Oracle health checks, backup and high-availability monitoring and incident triage for production databases across on-premises, Azure and AWS.',
+    'Associate Database Engineer at Onsys Technologies (Melbourne, Australia – remote), promoted from intern in November 2026. I monitor and maintain enterprise SQL Server, Oracle and PostgreSQL environments across on-premises, Azure and AWS: daily health checks, incident triage, backup and high-availability support, patching runbooks and automated health-check tooling.',
     'Focused on cloud architecture, infrastructure automation and database reliability, with hands-on AWS projects and full-stack applications, including offline-first systems for areas with poor connectivity.',
   ],
   highlights: [

@@ -1,7 +1,7 @@
 export const skillGroups = [
   {
     name: 'Databases',
-    items: ['Microsoft SQL Server (T-SQL)', 'Backups & restores', 'SQL Agent', 'Log shipping', 'Database mirroring', 'Always On AGs', 'Oracle Data Guard', 'Oracle RMAN', 'PostgreSQL', 'MySQL', 'DynamoDB', 'Supabase'],
+    items: ['Microsoft SQL Server (T-SQL)', 'Backups & restores', 'SQL Agent', 'Log shipping', 'Database mirroring', 'Always On AGs', 'DBCC CHECKDB', 'TDE & security hardening', 'Oracle Data Guard', 'Oracle RMAN', 'PostgreSQL', 'MySQL', 'DynamoDB', 'Supabase'],
   },
   {
     name: 'Cloud SQL platforms',
@@ -21,7 +21,7 @@ export const skillGroups = [
   },
   {
     name: 'DevOps & scripting',
-    items: ['PowerShell', 'Bash', 'Docker', 'Git', 'GitHub', 'Infrastructure as Code', 'High availability', 'Disaster recovery'],
+    items: ['PowerShell', 'Bash', 'Python automation', 'Docker', 'Git', 'GitHub', 'Infrastructure as Code', 'Patching runbooks', 'High availability', 'Disaster recovery', 'Incident management'],
   },
   {
     name: 'Programming',
